@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
+// import Form from "./Component/Blocks/Form";
+import Post from "./Component/Blocks/Post";
+import Card from "./Component/UI/Card";
 
 //my end point(Backend endpoint)
 const BASE_URL = "http://127.0.0.1:8000/";
 
 const App = () => {
   const [posts, SetPosts] = useState([]);
-
   useEffect(() => {
     fetch(BASE_URL + "blog/all")
       .then((response) => {
@@ -29,9 +32,15 @@ const App = () => {
   }, []);
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <h1 className="blog_tile">Chester's Amazing Blog Post</h1>
+      <div>
+        {posts.map((post) => (
+          <Card>
+            <Post post={post} key={post.id} />
+          </Card>
+        ))}
+      </div>
     </div>
   );
 };
-
 export default App;

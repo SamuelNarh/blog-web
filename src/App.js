@@ -35,9 +35,7 @@ const App = () => {
       <h1 className="blog_tile">Chester's Amazing Blog Post</h1>
       <div>
         {posts.map((post) => (
-          <Card>
-            <Post post={post} key={post.id} />
-          </Card>
+          <Post post={post} key={post.id} />
         ))}
       </div>
     </div>

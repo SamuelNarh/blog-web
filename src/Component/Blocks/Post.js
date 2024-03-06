@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Post.css";
+import Button from "../UI/Button";
 
 const Post = (props) => {
   const [imageUrl, SetImageUrl] = useState("");
@@ -13,9 +14,7 @@ const Post = (props) => {
         <div className="post_title">{props.post.title}</div>
         <div className="post_creator">by {props.post.creator}</div>
         <div className="post_text">{props.post.content}</div>
-        <div className="post_delete">
-          <button>Delete Post</button>
-        </div>
+        <Button className="post_delete"> Delete Post </Button>
       </div>
     </div>
   );

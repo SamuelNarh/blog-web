@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-// import Form from "./Component/Blocks/Form";
+import Form from "./Component/Blocks/Form";
 import Post from "./Component/Blocks/Post";
 
 //my end point(Backend endpoint)
@@ -37,6 +37,7 @@ const App = () => {
           <Post post={post} key={post.id} />
         ))}
       </div>
+      <Form/>
     </div>
   );
 };

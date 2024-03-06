@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 // import Form from "./Component/Blocks/Form";
 import Post from "./Component/Blocks/Post";
-import Card from "./Component/UI/Card";
 
 //my end point(Backend endpoint)
 const BASE_URL = "http://127.0.0.1:8000/";

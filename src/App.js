@@ -31,7 +31,7 @@ const App = () => {
   }, []);
   return (
     <div className="App">
-      <h1 className="blog_tile">Chester's Amazing Blog Post</h1>
+      <h1 className="blog_tile">Chester's Blog Post</h1>
       <div>
         {posts.map((post) => (
           <Post post={post} key={post.id} />

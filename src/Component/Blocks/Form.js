@@ -73,10 +73,10 @@ const Form = (props) => {
   //what we send to the body to the backend
   const createPost = (imageUrl) => {
     const json_string = JSON.stringify({
-      "image_url": imageUrl,
-      "title": title,
-      "content": text,
-      "creator": creator,
+      image_url: imageUrl,
+      title: title,
+      content: text,
+      creator: creator,
     });
     const requestOptions = {
       method: "POST",
